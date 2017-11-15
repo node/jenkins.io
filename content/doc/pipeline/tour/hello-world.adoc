@@ -7,45 +7,34 @@ section: doc
 :toc:
 :imagesdir: /doc/book/resources
 
-=== What is a Jenkins Pipeline?
+=== 什么是Jenkins Pipeline？
 
-Jenkins Pipeline (or simply "Pipeline") is a suite of plugins which supports
-implementing and integrating _continuous delivery pipelines_ into Jenkins.
+Jenkins Pipeline（或者简写为 “Piepline”）是一系列插件，支持通过Jenkins实现和集成 _持续交付流水线_ 。
 
-A _continuous delivery pipeline_ is an automated expression of your process for
-getting software from version control right through to your users and customers.
+一个 _持续交付流水线_ 就是一个软件从版本控制到用户或消费者手中的自动化流程。
 
-Jenkins Pipeline provides an extensible set of tools for modeling
-simple-to-complex delivery pipelines "as code". The definition of a Jenkins
-Pipeline is typically written into a text file (called a `Jenkinsfile`) which in
-turn is checked into a project's source control repository.
-footnoteref:[scm, https://en.wikipedia.org/wiki/Source_control_management[Source Control Management]]
+Jenkins Pipeline提供了一个扩展的工具集，把简单到复杂的交付流程建模“为代码”。一个Jenkins Pipeline的定义通常写到一个文本文件（叫做一个 `Jenkinsfile`），并一次检出到一个项目的源码控制仓库中。footnoteref:[scm, https://en.wikipedia.org/wiki/Source_control_management[Source Control Management]]
 
-For more information about Pipeline and what a `Jenkinsfile` is, refer to the
-respective link:/doc/book/pipeline[Pipeline] and
-link:/doc/book/pipeline/jenkinsfile[Using a Jenkinsfile] sections of the User
-Handbook.
+想要了解更多Pipeline的信息，以及`Jenkinsfile`是什么，请分别参考用户手册的 link:/doc/book/pipeline[Pipeline] 和 link:/doc/book/pipeline/jenkinsfile[Using a Jenkinsfile] 部分。
 
-To get started quickly with Pipeline:
+要快速开始使用Pipeline：
 
-. Copy one of the <<examples, examples below>> into your repository and name it `Jenkinsfile`
-. Click the *New Item* menu within Jenkins
-image:pipeline/new-item-selection.png["Click *New Item* on the Jenkins home page", role=center]
-. Provide a name for your new item (e.g. *My Pipeline*) and select *Multibranch Pipeline*
-. Click the *Add Source* button, choose the type of repository you want to use and fill in the details.
-. Click the *Save* button and watch your first Pipeline run!
+. 拷贝 <<examples, 下列示例>> 之一到自己的仓库，并命名为 `Jenkinsfile`
+. 在Jenkins中点击菜单 *New Item* image:pipeline/new-item-selection.png["点击Jenkins首页的 *New Item* ", role=center]
+. 为新项目设置一个名称（比如 “My Pipeline”）并选择 *Multibranch Pipeline* 。
+. 点击 *Add Source* 按钮，选择想使用的仓库类型并填入详细信息。
+. 点击  *Save* 按钮就可以看到第一个Pipeline运行起来了！
 
-You may need to modify one of the example `Jenkinsfile`'s to make it run with your project. Try modifying the `sh` command to run the same command you would run on your local machine.
+为了能在你的项目里运行，可能需要修改示例之一的 `Jenkinsfile`。试试修改 `sh` 命令执行计划将在本机运行的相同命令。
 
-After you have setup your Pipeline, Jenkins will automatically detect any new Branches or Pull Requests that are created in your repository and start running Pipelines for them.
+在设置好Pipeline以后，Jenkins将自动检测代码仓库中是否有新的分支或提交请求，一旦有就会开始为其执行Pipeline。
 
-**link:../running-multiple-steps[Continue to "Run multiple steps"]**
+**link:../running-multiple-steps[继续 "执行多个步骤"]**
 
 [[examples]]
-== Quick Start Examples
+== 快速入门示例
 
-Below are some easily copied and pasted examples of a simple Pipeline with
-various languages.
+下面是一些不同语言的简单Pipeline示例，很容易复制粘贴：
 
 === Java
 
@@ -183,6 +172,6 @@ node('docker') {
 ----
 
 ---
-**link:../running-multiple-steps[Continue to "Running multiple steps"]**
+**link:../running-multiple-steps[继续 "执行多个步骤"]**
 
 include::doc/_feedback-footer.adoc[]
