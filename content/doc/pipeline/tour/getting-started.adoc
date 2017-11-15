@@ -4,11 +4,11 @@ title: Getting Started with the Guided Tour
 section: doc
 ---
 
-本次指南性体验将介绍使用Jenkins及其主要功能Jenkins Pipeline的基本步骤，会使用Jenkin的 "standalone" 发行版，它可以本地机器上运行。
+这次指南性体验将介绍使用Jenkins及其主要功能Jenkins Pipeline的基本步骤，会使用Jenkin的 "standalone" 发行版，它可以本地机器上运行。
 
 === 准备
 
-本指南需要：
+为了完成体验，我们需要：
 
 * 一台机器：
 ** 256 MB 内存，推荐 512 MB 或以上
