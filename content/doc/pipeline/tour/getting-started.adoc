@@ -4,33 +4,30 @@ title: Getting Started with the Guided Tour
 section: doc
 ---
 
-This guided tour introduces you to the basics of using Jenkins and its main
-feature, Jenkins Pipeline. This tour uses the "standalone" Jenkins distribution,
-which runs locally on your own machine.
+本次指南性体验将介绍使用Jenkins及其主要功能Jenkins Pipeline的基本步骤，会使用Jenkin的 "standalone" 发行版，它可以本地机器上运行。
 
-=== Prerequisites
+=== 准备
 
-For this tour, you will require:
+本指南需要：
 
-* A machine with:
-** 256 MB of RAM, although more than 512MB is recommended
-** 10 GB of drive space (for Jenkins and your Docker image)
-* The following software installed:
-** Java 8 (either a JRE or Java Development Kit (JDK) is fine)
-** https://www.docker.com/[Docker] (navigate to *Get Docker* at the top of the
-   website to access the Docker download that's suitable for your platform)
+* 一台机器：
+** 256 MB 内存，推荐 512 MB 或以上
+** 10 GB硬盘空间（用于Jenkins及Docker镜像存储）
+* 安装下列软件：
+** Java 8（JRE或者JDK都可以）
+** ttps://www.docker.com/[Docker] （点击页面顶部的 *Get Docker* 访问你的平台所对应的Docker下载链接）
 
-=== Download and run Jenkins
+=== 下载并运行Jenkins
 
-. http://mirrors.jenkins.io/war-stable/latest/jenkins.war[Download Jenkins].
-. Open up a terminal in the download directory.
-. Run `java -jar jenkins.war --httpPort=8080`.
-. Browse to `http://localhost:8080`.
-. Follow the instructions to complete the installation.
+. http://mirrors.jenkins.io/war-stable/latest/jenkins.war[下载 Jenkins]。
+. 在下载目录打开一个终端窗口。
+. 运行 `java -jar jenkins.war --httpPort=8080` 。
+. 在浏览器访问 `http://localhost:8080`
+. 根据提示完成安装。
 
-When the installation is complete, you can start putting Jenkins to work!
+当安装完成后，就可以开始让Jenkins工作了！
 
 ---
-**link:../hello-world[Continue to "Create your first Pipeline"]**
+**link:../hello-world[继续 "创建你的第一个Pipeline"]**
 
 include::doc/_feedback-footer.adoc[]
