@@ -6,21 +6,15 @@ section: doc
 
 :toc:
 
-Pipelines are made up of multiple steps that allow you to build, test and
-deploy applications. Jenkins Pipeline allows you to compose multiple steps in
-an easy way that can help you model any sort of automation process.
+Pipeline由多个步骤组成，支持编译、测试及部署应用程序。Jenkins Pipeline能很方便地创建多个步骤，这有助于建模各种类型的自动化流程。
 
-Think of a "step" like a single command which performs a single action. When a
-step succeeds it moves onto the next step. When a step fails to execute
-correctly the Pipeline will fail.
+一个“步骤”可以认为就像一个单一指令一样，用来执行单一操作。当一个步骤完成后，就继续下一个步骤；当一个步骤执行失败后，Pipeline也将失败。
 
-When all the steps in the Pipeline have successfully completed, the Pipeline is
-considered to have successfully executed.
+当Pipeline中的所有步骤都成功完成时，就认为Pipeline也成功执行了。
 
-=== Linux, BSD, and Mac OS
+=== Linux、BSD 和 Mac OS
 
-On Linux, BSD, and Mac OS (Unix-like) systems, the `sh` step is used to execute
-a shell command in a Pipeline.
+在Linux、BSD 和 Mac OS（类Unix）系统上，`sh` 步骤用于在Pipeline里执行shell命令。
 
 [pipeline]
 ----
@@ -51,9 +45,9 @@ node {
 }
 ----
 
-=== Windows
+=== Windows系统
 
-Windows-based systems should use the `bat` step for executing batch commands.
+Windows系统将使用 `bat` 步骤来执行批处理命令。
 
 [pipeline]
 ----
@@ -76,17 +70,10 @@ node {
 }
 ----
 
-////
-XXX: (rtyler) I think this section doesn't belong at this point in the Guided Tour
-     may need to figure out a better place to introduce additional steps and
-     wrappers steps
-////
 
-== Timeouts, retries and more
+== 超时、重试和其他
 
-There are some powerful steps that "wrap" other steps which can easily solve
-problems like retrying (`retry`) steps until successful or exiting if a
-step takes too long (`timeout`).
+一些功能强大的步骤，会通过封装其他步骤来更容易地解决一些问题，比如重试（`retry`）直到成功，或者如果耗时太长就退出（`timeout`）。
 
 [pipeline]
 ----
@@ -121,17 +108,11 @@ node {
 }
 ----
 
-The "Deploy" stage retries the `flakey-deploy.sh` script 3 times, and then
-waits for up to 3 minutes for the `health-check.sh` script to execute. If the
-health check script does not complete in 3 minutes, the Pipeline will be marked
-as having failed in the "Deploy" stage.
+"Deploy" 阶段会重试 `flakey-deploy.sh` 脚本3次，然后最多等待3分钟来执行 `health-check.sh` 脚本。如果健康检查脚本没有在3分钟内完成，Pipeline将标记为在 "Deploy" 阶段失败。
 
-"Wrapper" steps such as `timeout` and `retry` may contain other steps,
-including `timeout` or `retry`.
+像  `timeout` 和 `retry` 之类的 "Wrapper" 步骤可能会包含其他步骤，包括 `timeout` 或 `retry` 。
 
-We can compose these steps together. For example, if we wanted to retry our
-deployment 5 times, but never want to spend more than 3 minutes in total before
-failing the stage:
+可以把这些步骤组合到一起，比如，如果想重试部署5次，但在该阶段失败前累计耗时不超过3分钟。
 
 [pipeline]
 ----
@@ -162,11 +143,9 @@ node {
 }
 ----
 
-== Finishing up
+== 完成
 
-When the Pipeline has finished executing, you may need to run clean-up steps or
-perform some actions based on the outcome of the Pipeline. These actions can be
-performed in the `post` section.
+当Pipeline执行完成后，需要执行清理步骤，或者针对Pipeline结果执行一些操作，这些操作可以放在 `post` 环节执行：
 
 [pipeline]
 ----
@@ -231,7 +210,6 @@ node {
 
 ---
 
-With the basics of defining multiple steps finished, let's
-**link:../agents[continue to "Defining execution environments"]**
+在完成定义多步骤的基础后，请 **link:../agents[继续 "Defining execution environments"]**
 
 include::doc/_feedback-footer.adoc[]
