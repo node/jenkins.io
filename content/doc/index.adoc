@@ -4,35 +4,24 @@ title: Jenkins User Documentation
 section: doc
 ---
 
-Welcome to the Jenkins user documentation - for people wanting to _use_
-Jenkins's existing functionality and plugin features.
+欢迎来到Jenkins用户文档——面向希望 _使用_ Jenkins已有功能和插件的用户。
 
-If you want to _extend_ the functionality of Jenkins by developing your own
-Jenkins plugins, please refer to the link:developer[Extend Jenkins] (developer
-documentation).
+如果想要开发自己的Jenkins插件以扩展Jenkins功能，请参考 link:developer[扩展 Jenkins] (开发者文档)。
 
-== What is Jenkins?
+== Jenkins是什么？
 
-Jenkins is a self-contained, open source automation server which can be used to
-automate all sorts of tasks related to building, testing, and deploying software.
+Jenkins是一个自包含的开源自动化服务器，可用于自动化软件的编译、测试和部署相关的所有任务。
 
-Jenkins can be installed through native system packages, Docker, or even run
-standalone by any machine with a Java Runtime Environment (JRE) installed.
+Jenkins可通过本地系统包或Docker来安装，甚至可以在任何安装了Java运行时环境（JRE）的机器上独立运行。
 
-== About this documentation
+== 关于本文档
 
-This documentation begins with a link:pipeline/tour/getting-started[Guided Tour]
-to help you get up and running with Jenkins and introduce you to Jenkins's main
-feature, Pipeline.
+本文档从link:pipeline/tour/getting-started[导览]开始，帮助你对Jenkins由浅入深，并介绍Jenkins的主要特性Pipeline。
 
-There are also link:tutorials[introductory tutorials] geared to developers who
-want to orchestrate and automate building their project in Jenkins using
-Pipeline and Blue Ocean.
+也有 link:tutorials[入门教程]，面向那些想在Jenkins中使用Pipeline和Blue Ocean来编排和自动化编译项目的开发人员。
 
-If you've never used Jenkins before or have limited Jenkins experience, then the
-Guided Tour and introductory tutorials are good places to start.
+如果此前从未使用过Jenkins，或只有少量经验，那么导览和入门教程是很不错的起点。
 
-If you are looking for more detailed information about using Jenkins, please
-refer to the link:book/getting-started[User Handbook].
+想要获取使用Jenkins的更详细信息，请参考 link:book/getting-started[用户手册] 。
 
 include::doc/_feedback-footer.adoc[]
