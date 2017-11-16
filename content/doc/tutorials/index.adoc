@@ -4,32 +4,21 @@ title: Tutorials overview
 section: doc
 ---
 
-This part of the Jenkins User Documentation contains a series of introductory
-tutorials to help you begin building your applications in an automated fashion
-with Jenkins.
+本部分Jenkins用户文档包含一系列入门教程，帮助你借助Jenkins开始自动化地编译应用程序。
 
-If you're a developer who wants to improve your understanding of Continuous
-Integration (CI) / Continuous Delivery (CD) concepts, or you might already be
-familiar with these concepts but don't yet know how to implement them in
-Jenkins, then these tutorials are a great place to start.
+如果你是一名想要更深入理解持续集成（CI）/持续交付（CD）概念的开发人员，或者已经熟悉这些概念但还不太了解如何在Jenkins中实现它们，那么这些教程会是一个不错的开始。
 
-== Introductory tutorials
+== 入门教程
 
-The following tutorials show how to use Jenkins to cover the basics of CI/CD
-concepts based on specific technology stacks.
+以下教程展示如何使用Jenkins，涵盖特定技术栈的CI/CD概念基础知识。
 
-Choose the tutorial that's relvant to your technology stack or one that you're
-most familiar with:
+可以选择与你的技术栈相关的教程，或者最熟悉的：
 
-* link:building-a-java-app-with-maven[Using Jenkins to build a Java application
-  with Maven]
-* link:building-a-node-js-and-react-app-with-npm[Using Jenkins to build a
-  Node.js and React application with npm]
+* link:building-a-java-app-with-maven[使用Jenkins通过Maven编译一个Java应用程序]
+* link:building-a-node-js-and-react-app-with-npm[使用Jenkins通过npm编译一个Node.js 和 React 应用程序]
 
-The following tutorials show how to use key features of Jenkins (such as
-link:/doc/book/blueocean/[Blue Ocean]) to facilitate implementing CI/CD
-processes to build your applications:
+以下教程展示如何使用Jenkins的关键特性（比如 link:/doc/book/blueocean/[Blue Ocean]），来帮助实现CI/CD流程并编译应用。
 
-* link:creating-a-pipeline-in-blue-ocean[Creating a Pipeline in Blue Ocean]
+* link:creating-a-pipeline-in-blue-ocean[在Blue Ocean中创建一个Pipeline]
 
 include::doc/_feedback-footer.adoc[]
